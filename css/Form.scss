@@ -1,0 +1,57 @@
+body{
+    background-color:darken($color: #282E3E, $amount: 15);
+}
+
+#layout{
+    min-height: 100vh;
+
+   #editor,#view{
+        border: 1px solid #cccccc17;
+        min-height: 100vh;
+        display: flex;
+        justify-content:center;
+        align-items:center; 
+    }
+}
+
+
+#form{
+    background-color: whitesmoke;
+    padding:10px;
+    width:100%;
+text-align: center;
+    border-radius: 20px;
+
+    
+}
+
+
+#tab-container{
+    width: 100%;
+    padding: 10px;
+    background-color:#282E3E;
+border-radius: 20px;
+box-shadow: 4px 4px 15px #292f3f77;
+}
+
+
+#editor{
+    text-align: center;
+
+}
+
+
+#test2{
+    padding:20px;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+align-items: center;
+
+   .blue{
+      display: block;
+      width:50%;
+      margin:20px auto;
+      text-align: center;
+  }
+}

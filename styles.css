@@ -1,0 +1,101 @@
+body {
+    background-color: #1B1B1E;
+  }
+  
+  .cta {
+    background-color: #4D47F2;
+    margin-top: 30px;
+  }
+  
+  h2 {
+    font-family: "Francois One";
+  }
+  
+  #landing-text {
+    margin-top: 150px !important;
+    margin-bottom: 100px !important;
+  }
+  
+  #landing-text .col {
+    margin-top: 20px;
+  }
+  
+  #features {
+    margin: 0px 40px;
+  }
+  
+  #featured-components {
+    margin: 50px 0px;
+    display: flexbox;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  #featured-components h4 {
+    color: #4D47F2;
+    padding: 10px !important;
+  }
+  
+  #featured-components .material-icons {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  
+  #featured-components .carousel {
+    height: auto !important;
+  }
+  
+  #featured-components .carousel .carousel-item {
+    width: 300px !important;
+    height: auto !important;
+  }
+  
+  @media screen and (max-width: 680px) {
+    #featured-components {
+      margin: 50px 0px;
+    }
+    #featured-components h4 {
+      font-size: 20px;
+      color: #4D47F2;
+      padding: 10px !important;
+    }
+    #featured-components .material-icons {
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+    #features {
+      margin: 20px auto;
+    }
+    #landing-text {
+      margin-top: 50px !important;
+    }
+    #landing-text h5 {
+      font-size: 16px  !important;
+    }
+    #landing-text h2 {
+      font-size: 32px;
+      font-family: "Francois One";
+    }
+  }
+  
+  .carousel-item{
+      border: 1px solid #cccccc;
+      background-color: floralwhite;
+      border-radius:15px;
+      padding: 10px;
+      text-align: left;
+  }
+
+  .carousel-item a{
+      text-align: left;
+      margin:15px;
+  }
+  .carousel-item h5{
+    font-family: 'Oswald', sans-serif;
+    opacity: 0.8;
+    padding: 5px;
+  }

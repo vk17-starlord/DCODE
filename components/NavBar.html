@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- material css  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.1/dragula.css" integrity="sha512-gGkweS4I+MDqo1tLZtHl3Nu3PGY7TU8ldedRnu60fY6etWjQ/twRHRG2J92oDj7GDU2XvX8k6G5mbp0yCoyXCA==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Slab&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/NavBar.css"/>
+  <link rel="stylesheet" href="../prism(1).css">
+
+</head>
+<div class="row" id="layout">
+ 
+  <div class="col s12 l12 m12 " id="editor">
+    <a href="../index.html" data-target="slide-out" class="sidenav-trigger"><i class="material-icons white-text">home</i></a>
+
+    <div class="container">
+      
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating tooltipped red modal-trigger" data-position="left" data-tooltip="Add Dropdown " href="#dropdown"><i class="material-icons"  >arrow_drop_down_circle</i></a></li>
+    <li><a class="btn-floating tooltipped yellow darken-4 modal-trigger" data-position="left" data-tooltip="Add Link Btn " href="#link"><i class="material-icons">link</i></a></li>
+    <li><a class="btn-floating tooltipped blue modal-trigger" data-position="left" data-tooltip="Add Your Logo " href="#logo"><i class="material-icons">polymer</i></a></li>
+       <li onclick="updatecode()">    <a class="btn-floating tooltipped blue modal-trigger" data-position="left" data-tooltip="Get Code "href="#modal1"><i class="material-icons">code</i></a>        </li>
+  </ul>
+</div>
+
+<div class="nav-code">
+  
+<nav>
+  <div class="nav-wrapper black">
+    <img src='https://about.canva.com/wp-content/uploads/sites/3/2016/08/logos-1.png' class="brand-logo circle responsive-img">
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down" id="links">
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+
+</ul>    
+</div>
+
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+           
+<div class="row grey darken-4">
+  <div class="col s12">
+    <ul class="tabs grey darken-4">
+      <li class="tab col s3"><a class="active" href="#test1">HTML</a></li>
+      <li class="tab col s3"><a  href="#test2">CSS</a></li>
+    </ul>
+  </div>
+  <div id="test1" class="col s12">
+    <div class="html-code">
+
+    <pre>
+    <code class="language-html">
+    
+    </code>
+    </pre>
+    </div> 
+  </div>
+  <div id="test2" class="col s12">
+    
+    <div class="css-code">
+      <pre>
+        <code class="language-css">
+          .navbar {
+            -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+                align-self: center;
+            width: 100%;
+            height: 100px;
+            border: 1px solid #cccccc;
+            padding: 10px;
+          }
+          
+          .brand-logo {
+            margin: 10px 20px;
+            width: 45px;
+          }
+          
+          #moblinks {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            padding: 10px;
+          }
+          
+          #moblinks .dropdown-trigger {
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+          }
+        </code>
+        </pre>
+    </div> 
+  </div>
+
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+      
+
+</div>
+
+
+
+ 
+  
+
+     </div>
+   
+                  
+</div>
+
+<!-- modals -->
+
+<!-- Modal Structure -->
+<div id="dropdown" class="modal">
+  <div class="modal-content">
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="dropdown_name" type="text" class="validate">
+            <label for="dropdown_name">Dropdown </label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="dropdown_background-color" type="text" class="validate">
+            <label for="dropdown_background-color"> Background</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="Dropdown_link" type="text" class="validate">
+            <label for="Dropdown_link">Link Text</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="dropdown_href" type="text" class="validate">
+            <label for="dropdown_href">Link href</label>
+
+          </div>
+          <a class="btn-floating btn-small waves-effect waves-light red center " onclick="adddroplinks()" ><i class="material-icons">add</i></a>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick='addDropdown()'>done</a>
+  </div>
+</div>
+
+<div id="link" class="modal">
+  <div class="modal-content">
+    <div class="input-field col s6">
+      <input placeholder="Placeholder" id="linktext" type="text" class="validate" >
+      <label for="linktext">Enter Link Text</label>
+    </div>
+    <div class="input-field col s6">
+      <input placeholder="Placeholder" id="linkhref" type="text" class="validate" >
+      <label for="linkhref">Enter Link href</label>
+    </div>
+    <div class="input-field col s6">
+      <input placeholder="Placeholder" id="linkbg" type="text" class="validate" >
+      <label for="linkbg">Enter Link bg</label>
+    </div>
+    <div class="input-field col s6">
+      <input placeholder="Placeholder" id="linkcolor" type="text" class="validate" >
+      <label for="linkcolor">Enter Link color</label>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick='addlinkbutton()'>Add</a>
+  </div>
+</div>
+
+
+
+
+<div id="logo" class="modal">
+  <div class="modal-content">
+    <div class="input-field col s6">
+      <input placeholder="Placeholder" id="logoinput" type="text" class="validate" >
+      <label for="logoinput">Enter URL For your logo image</label>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick='changelogo()'>Change</a>
+  </div>
+</div>
+
+<!-- material -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.1/dragula.min.js" integrity="sha512-kn16YS1EMScMKJGahSMt/OHDeafiU8k5ZNMBoW4eC4gTEUDT5v7JzvxM2z2kDYJq/lRuMZDjgwHwhSQ1jPy8Sw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="../js/Navbar.js"></script>
+  <script src='../prism(1).js'></script>
+  <script>
+      M.AutoInit();
+
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'top',
+      hoverEnabled: false
+    });
+
+
+
+
+  });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+  background-color: #0a0c10;
+}
+
+#layout {
+  min-height: 100vh;
+}
+
+#layout #editor, #layout #view {
+  border: 1px solid #cccccc17;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#form {
+  background-color: whitesmoke;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#tab-container {
+  width: 100%;
+  padding: 10px;
+  background-color: #282E3E;
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 15px #292f3f77;
+          box-shadow: 4px 4px 15px #292f3f77;
+}
+
+#editor {
+  text-align: center;
+}
+
+#test2 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#test2 .blue {
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}

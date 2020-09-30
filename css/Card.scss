@@ -1,0 +1,92 @@
+body{
+    background-color:#1b1b1b;
+}
+
+#layout{
+    min-height: 100vh;
+  #card-view,#card-form{
+
+    padding: 20px;
+      height: 100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+  }
+}
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav-trigger{
+  align-self: flex-start;
+}
+
+#CardEdit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.card{
+margin: 0 auto;
+  width: 320px;
+  min-height: 420px;
+  height: auto;
+  box-shadow: 2px 5px 8px #1a1a1a96;
+background-color: #fff;
+}
+
+.card-image{
+  width:100%;
+  height: 250px;
+}
+
+.card-text{
+  margin: 12px  0px!important;
+}
+
+.card-title{
+  font-family: 'Arvo', serif;
+  font-size:16px;
+}
+
+#card-btn{
+text-align: center;
+padding:12px;
+background-color: #1b1b1b;
+color: #fff;
+border: none;
+}
+
+.card-content{
+  padding:20px;
+  height: auto;
+}
+
+
+@media screen and (max-width:678px){
+ .card{
+   width:100%;
+   min-height: 420px;
+ }
+ .card-title{
+   font-size:16px !important;
+ }
+ .card-img{
+height: 200px;
+ }
+ .card-content{
+   font-size:14px;
+padding:10px !important;
+  }
+  #card-btn{
+  margin:0px;
+  }
+}

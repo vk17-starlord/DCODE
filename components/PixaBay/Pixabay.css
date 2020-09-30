@@ -1,0 +1,23 @@
+body {
+  background-color: #01070e;
+}
+
+.sidenav {
+  background-color: #020e1c;
+  padding-left: 50px !important;
+}
+
+#gallery {
+  min-height: 100vh;
+  height: auto;
+  color: #ffffff;
+  padding: 20px;
+}
+
+#gallery #photo {
+  margin: 20px auto;
+}
+
+#gallery #photo img {
+  width: 100%;
+}
