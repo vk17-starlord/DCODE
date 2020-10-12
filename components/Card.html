@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../prism(1).css">
     <link rel="stylesheet" href="../css/Card.css" />
 
@@ -52,7 +51,8 @@
     <li><a class="btn-floating pink btn tooltipped modal-trigger" href="./PixaBay/Pixabay.html" data-position="left" data-tooltip="Get Images " ><i class="material-icons">add_photo_alternate</i></a></li>
     <li><a class="btn-floating blue btn tooltipped modal-trigger" href="#edit-card" data-position="left" data-tooltip="Edit Card " ><i class="material-icons">landscape</i></a></li>
     <li><a class="btn-floating yellow darken-1 btn tooltipped modal-trigger" href="#edit-content" data-position="left" data-tooltip="Edit Card Content"><i class="material-icons">description</i></a></li>
-  
+    <li><a class="btn-floating purple darken-1 btn tooltipped " onclick="saveoncloud()"  data-position="left" data-tooltip="Save Code On Cloud"><i class="material-icons">backup</i></a></li>
+
   </ul>
 </div>
 
@@ -175,13 +175,79 @@
 
 
 
+<!-- firstore -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAFYiWDiK5WUiX1dafXly8WIaJ90wZHLNM",
+    authDomain: "ui-components-library.firebaseapp.com",
+    databaseURL: "https://ui-components-library.firebaseio.com",
+    projectId: "ui-components-library",
+    storageBucket: "ui-components-library.appspot.com",
+    messagingSenderId: "539553047260",
+    appId: "1:539553047260:web:c7b9874b0c0562235e8a19",
+    measurementId: "G-NYSTKRHTPK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  // make auth and firestore refernece
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  function saveoncloud(){
+var html= document.querySelector('.language-html').textContent;
+var css= document.querySelector('.language-css').textContent;
+console.log(html,css);
+var code={html,css}
+savecode('card',code)
+}
+function savecode(component,code) {
+  const id=localStorage.getItem('id');
+  db.collection('users').doc(id).set({
+ html:  code.html,
+ css:code.css
+  }).then((result)=>{console.log(result)
+}
+).catch((error)=>{console.log(error)});
+}
+
+
+
+     
+  // update firestore 
+</script>
 
       <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
  
-    <script src='../prism(1).js'></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.21.1/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<!-- emd firestore -->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="../materialize/js/materialize.min.js"></script>
+ 
+    <script src='../prism(1).js'></script>
+<script src='../js/FireBase.js'></script>
     <script src='../js/ProductCard.js'></script>
     <script>
 
@@ -194,6 +260,11 @@
       hoverEnabled: false
     });
   });
+
+
+
+
+  
     </script>
 </body>
 </html>

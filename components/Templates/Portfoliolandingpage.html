@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <script src="https://kit.fontawesome.com/8bc81e38cb.js" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<style>
+body{
+    background-color:whitesmoke;
+    padding-bottom: 20px;
+}
+
+.fab{
+  margin:15px auto;
+}
+.companies{
+  margin:0px 50px;
+}
+#layout{
+  width:100%;
+  height: auto;
+}
+.col{
+  width:100%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+
+
+.portfolio-img{
+  width:80%;
+  background-position: center center;
+  background-size: cover;
+  height: 80%;
+  
+  transition: width 2s, height 2s, transform 2s;
+  animation: mymove 6s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
+  display:flex;
+  flex-direction: column;
+justify-content: flex-end;
+background-image: url('https://images.unsplash.com/photo-1595619769434-3524be811dbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80');
+}
+
+.portfolio-img:hover{
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 4s ease-in-out;
+  width: 100%;
+  height: 300%;
+transform:scale(1.2)
+}
+
+.half-circle{
+border-radius: 50% 51% 0% 100% / 100% 100% 0% 0% ;
+width:100%;
+height: 180px;
+background-color: rgba(115, 57, 223, 0.445);box-shadow: 2px 2px 8px #3f3e3ec7;
+}
+
+.side-circle {
+  border-radius: 50% 51% 0% 100% / 100% 100% 0% 0% ;
+width:200px;
+position:absolute;
+margin:100px -50px;
+height: 100px;
+transform:rotate(-90deg);
+background-color: rgba(223, 171, 57, 0.822);
+opacity: 0.7;
+}
+
+.down-circle{
+  border-radius: 50% 51% 0% 100% / 100% 100% 0% 0% ;
+width:250px;
+height: 100px;
+transform:rotate(-180deg);
+background-color: rgba(57, 101, 223, 0.822);
+opacity: 0.7;
+justify-self: flex-end;
+align-self: flex-end;
+}
+
+/* @keyframes mymove {
+  0%   { left:0px; top:0px;background-image: url('https://images.unsplash.com/photo-1596365481115-79cb80ea517b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');}
+
+  50% {background-image: url('https://images.unsplash.com/photo-1595619769434-3524be811dbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80');}
+
+ 100%   {background-image: url('https://images.unsplash.com/photo-1596365481115-79cb80ea517b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');}
+
+} */
+@media screen and (max-width:678px){
+  .portfolio-img{
+    width:100%;
+    height: 70%;
+  }
+  #text-box{
+    padding:40px !important;
+  }
+}
+
+#text-box,#info-box{
+  align-items: flex-start;
+  padding: 75px;
+}
+</style>
+<body>
+    
+    <nav class="transparent z-depth-0">
+        <div class="nav-wrapper black-text">
+          <a href="#!" class="brand-logo black-text" style="margin:0px 10px;" ><span class="material-icons">bubble_chart</i></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down" >
+  
+            <a class="waves-effect waves-teal btn-flat grey-text ">About</a>
+            <a class="waves-effect waves-teal btn-flat " style='border-bottom: 1px solid rgb(43, 5, 5);'>Service</a>
+            <a class="waves-effect waves-teal btn-flat grey-text" >Team</a>
+            <a class="waves-effect waves-teal btn-flat grey-text">Contact</a>
+            <a class="waves-effect waves-teal btn grey darken-4 white-text" style="margin-left: 50vh;border-radius:40px;">Get In Touch</a>
+    </ul>
+
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo"  style="text-align: center;" >
+        
+          <a class="waves-effect waves-teal btn-flat grey-text " style='display:block;margin:20px auto;'>About</a>
+          <a class="waves-effect waves-teal btn-flat " style='margin:20px auto;border-bottom: 1px solid rgb(43, 5, 5);width:50%;display:block;'>Service</a>
+          <a class="waves-effect waves-teal btn-flat grey-text" style='display:block;margin:20px auto;'>Team</a>
+          <a class="waves-effect waves-teal btn-flat grey-text" style='display:block;margin:20px auto;'>Contact</a>
+          <a class="waves-effect waves-teal btn grey darken-4 white-text" style="margin:20px auto;border-radius:40px;display:block;width:50%;">Get In Touch</a>
+      </ul>
+
+      <div class="row" id="layout"> 
+        <div class="col l4 s12" id="text-box">
+<h5><span class="material-icons" style='position: absolute;margin-top:10px;margin-left:-40px;'>maximize</span>We Are</h5>
+
+<h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">DESIGN NINJAS</h3>      
+
+<h5  style="font-family: 'Roboto', sans-serif;line-height: 2.5rem;color: rgba(37, 38, 39, 0.753);" >We Design Technology<br> For Startup to Fortune <br>500 Companies</hh5>
+<br>
+  <p class="material-icons blue lighten-4 black-text" style="padding:15px;border-radius:0px 30px 0px 0px;">call_made</p>
+
+  <p style="border-top:2px solid #1b1b1b59;color: black">We are proudly working with Google UX Design Team</p>
+</div>
+        <div class="col l5 s12" id="hero-box" style="height:100vh">
+<div class="portfolio-img">
+  <div class="side-circle"></div>
+<div class="half-circle">
+ 
+</div>
+
+
+</div>
+<div class="down-circle"></div>
+        </div>
+        <div class="col l3 s12" id="info-box" >
+<span class="material-icons"></span>
+<h5><span class="material-icons" style='position: absolute;margin-top:10px;margin-left:-40px;'>maximize</span>Our Projects</h5>
+<h5 style="font-weight: bold;">Search Engine.SF</h5>
+<h4>Google</h4>
+
+<span style="margin-top:50px;border-bottom:1px solid #1b1b1b;font-size: 1.5em;">Explore</span>
+</div>
+
+</div>
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Lets Design A Better Tomorrow!</h5>
+        <p class="grey-text">Sporting an unconventional layout of overlapping images, text and gifs, Dennis’ homepage is reminiscent of a mood board. His unique style makes for a truly distinct personal brand that remains cohesive throughout each page of his website.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-accusoft"></i> </a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-google"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-google-wallet"></i></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fas fa-basketball-ball"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2014 Copyright Lorem.com
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+    
+
+    <script src="../../materialize/js/materialize.min.js"></script>
+
+    <script>
+
+  M.AutoInit();
+  
+
+  
+    </script>
+    </body>
+</html>     

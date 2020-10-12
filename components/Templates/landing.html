@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+ 
+    <link rel="stylesheet" href="../prism(1).css">
+ <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<style>
+    :root {
+
+--bg: #25262F;
+--primary: #5839B0;
+--text-primary:floralwhite;
+--text-secondary:#A3A2B0;
+--heading-font: 'Piazzolla', serif;
+--text-font: 'Roboto', sans-serif;
+    }
+#layout{
+    height: 100vh;
+}
+
+#layout .col{
+/* border: 1px solid #ccc; */
+height: 100vh;
+}
+body{
+    background-color:var(--bg) ;
+}
+
+#title{
+color:  #805edd ;
+}
+.heading{
+  font-family: var(--heading-font);
+
+}
+
+#cta{
+  background-color: var(--primary);
+  border-radius:40px;
+  box-shadow: -2px -3px 8px rgba(157, 101, 247, 0.226),
+                   2px  3px 8px #1b1b1b ;
+}
+
+.cta-text{
+  width:70%;
+  margin:150px auto;
+}
+#learn{
+  border: 3px solid var(--primary);
+  border-right: none;
+  background-color:#1b1b1ba4;
+  margin:0px 20px;
+  text-overflow: auto;
+  box-shadow: -2px -3px 4px #5756566c;
+}
+
+#overflow{
+  position:absolute;
+  color: floralwhite;z-index: 2;
+  margin:15px 40px;
+}
+
+#arrow{
+  position:absolute;
+  margin:0px 10px;
+}
+
+#hero{
+  width:100%;
+margin-top: 20vh;
+margin-bottom:70px;
+}
+
+@media screen and (max-width:678px){
+  .cta-text{
+    width:100%;
+    padding: 10px;
+  }
+  .heading{
+    font-size: 3.5rem;
+  }
+}
+
+
+</style>
+<body>
+    
+    <nav class="transparent">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo "  ><i class="material-icons" >school</i>Kabot</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down" style="margin:0px 75vh">
+            <li><a href="sass.html">About us</a></li>
+            <li><a href="badges.html">Price</a></li>
+            <li><a href="collapsible.html">Feedback</a></li>
+            <li><a href="mobile.html">Contact</a></li>
+            <li><a href="mobile.html">FAQ</a></li>
+
+        </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+
+      </ul>
+
+      <div class="row" id="layout">
+
+        <div class="col l5 s12">
+
+              <div class="cta-text">
+                  <h5 id="title">Do You Study Remotly? </h5>
+                  <h1 class="white-text heading">
+                    Assistace To <br> Students 
+                  </h1>
+                  <p class='grey-text'>we help students remotely pass any exam tests or exams in any subject in shortest possible time</p>
+              
+                  <a class="waves-effect waves-light btn-large" id="cta">get in touch</a>
+                <span id="overflow">Learn More <i class="material-icons" id="arrow">arrow_downward</i></span>  <a class="btn-floating btn-large waves-effect waves-light " id="learn"></a>
+          <p></p>
+                <a class="btn-floating btn-large waves-effect waves-light" style=" margin:60px 10px;background-color: #1b1b1b; border: 3px solid #5839B0;text-align: center;"  ><i class="material-icons">account_balance</i>  </a>
+<span class='white-text'> All University</span>
+        </div>  
+
+
+        </div>
+        <div class="col l4 s8">
+<img src="../../img/undraw_instant_support_elxh.svg" id="hero" alt="" class="src">
+<i class="material-icons  white-text" >mouse</i>
+        </div>
+        <div class="col l3 s4">
+<div style="margin:120px auto;">
+  <h4 class="center white-text">10</h4>   
+<p class="center white-text">Years <br>of success<br>works</p>  
+</div>
+<h4 class="center white-text">100*  </h4>   
+<p class="center white-text" >Statisfied  <br>Customers<br>works</p>    
+<p class='white-text' style='margin:120px auto'>Get In  Touch   <i class="material-icons" style="position:absolute; margin:0px 10px;">stars</i> </p>             
+
+</div>
+  
+</div>
+
+
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+
+  M.AutoInit();
+  
+
+  
+    </script>
+    </body>
+</html>
