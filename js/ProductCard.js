@@ -25,7 +25,7 @@ title:' White Chocolate Dust',
 titleColor:'#1b1b1b',
 textColor:'#000',
 text:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorem natus voluptatibus ullam a neque consectetur animi eaque tempora ipsum!',
-buttonbg:'crimson',
+buttonbg:'#1b1b1b',
 buttonColor:'#fff',
 buttonText:'Read More'
 }
@@ -130,26 +130,26 @@ height: 250px;
 }
 
 .card-content {
-padding:5px;
+  padding:0px 5px;
 
 }
 .card-title{
 font-size:24px !important;
 color:${CardProps.Card_Content.titleColor};
-padding:10px;
+font-family: 'Arvo', serif;
 }
 .card-text{
+  font-weight: lighter;
   font-size:16px !important;
   color:${CardProps.Card_Content.textColor};
-  padding:10px;
 }
 #card-btn{
-margin:10px;
-padding:8px 15px;
+  margin-top:20px;
+  padding:12px 15px;
 background-color: ${CardProps.Card_Content.buttonbg};
 border: none;
 color:${CardProps.Card_Content.buttonColor};
-box-shadow:2px 4px 8px rgba(220, 20, 60, 0.5);
+box-shadow:2px 3px 8px #1b1b1b3d;
 }
 
 
@@ -175,7 +175,7 @@ box-shadow:2px 4px 8px rgba(220, 20, 60, 0.5);
    }
  }
 
-}
+
 
 `
 document.querySelector('.language-css').innerHTML=Prism.highlight(css, Prism.languages.css);

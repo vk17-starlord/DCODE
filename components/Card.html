@@ -16,7 +16,7 @@
     
       
     <ul id="slide-out" class="sidenav">
-        <li><a href="../index.html" class='center'><span class="material-icons center">home</span> <span class="hide-on-small-only"> Home</span> </a></li>
+        <li><a href="../index.html" class='center'><span class="material-icons center">home</span>  </a></li>
 
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
@@ -51,8 +51,6 @@
     <li><a class="btn-floating pink btn tooltipped modal-trigger" href="./PixaBay/Pixabay.html" data-position="left" data-tooltip="Get Images " ><i class="material-icons">add_photo_alternate</i></a></li>
     <li><a class="btn-floating blue btn tooltipped modal-trigger" href="#edit-card" data-position="left" data-tooltip="Edit Card " ><i class="material-icons">landscape</i></a></li>
     <li><a class="btn-floating yellow darken-1 btn tooltipped modal-trigger" href="#edit-content" data-position="left" data-tooltip="Edit Card Content"><i class="material-icons">description</i></a></li>
-    <li><a class="btn-floating purple darken-1 btn tooltipped " onclick="saveoncloud()"  data-position="left" data-tooltip="Save Code On Cloud"><i class="material-icons">backup</i></a></li>
-
   </ul>
 </div>
 
@@ -186,41 +184,6 @@
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
 
 <script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyAFYiWDiK5WUiX1dafXly8WIaJ90wZHLNM",
-    authDomain: "ui-components-library.firebaseapp.com",
-    databaseURL: "https://ui-components-library.firebaseio.com",
-    projectId: "ui-components-library",
-    storageBucket: "ui-components-library.appspot.com",
-    messagingSenderId: "539553047260",
-    appId: "1:539553047260:web:c7b9874b0c0562235e8a19",
-    measurementId: "G-NYSTKRHTPK"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  // make auth and firestore refernece
-  const auth = firebase.auth();
-  const db = firebase.firestore();
-
-  function saveoncloud(){
-var html= document.querySelector('.language-html').textContent;
-var css= document.querySelector('.language-css').textContent;
-console.log(html,css);
-var code={html,css}
-savecode('card',code)
-}
-function savecode(component,code) {
-  const id=localStorage.getItem('id');
-  db.collection('users').doc(id).set({
- html:  code.html,
- css:code.css
-  }).then((result)=>{console.log(result)
-}
-).catch((error)=>{console.log(error)});
-}
 
 
 

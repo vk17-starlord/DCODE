@@ -1,24 +1,75 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
-    
-     
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <!-- material css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   
-  </head>
-  
+</head>
+<style>
+    .card{
+  width:320px;
+  min-height:520px;
+  border-radius: 20px;
+padding-top: 20px;
+  margin: 100px auto;
+  background-color: rgb(24, 24, 23);
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.493);
+  text-align: center;
+}
+
+
+.profile-image{
+  width:200px;
+  height: 200px;
+  margin: 20px auto;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.829);
+  border-radius: 50%;
+
+  background-position:center;
+  background-size: cover;
+}
+#profile-name{
+  font-size:1.5rem;
+  margin:20px auto;
+  color:aliceblue;
+  font-family: 'Oswald', sans-serif;
+  }
+  .profile-description{
+    text-align:left;
+    font-weight: bold;
+    color: #cccccc;
+    opacity: 0.5;
+    padding:0px 20px;
+  }
+
+  .profile-btn{
+    padding:10px  30px;
+    margin:20px auto;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(245, 223, 22, 0.336);
+    background-color:rgba(243, 224, 53, 0.911);
+    font-family: 'Roboto Slab', serif;
+  }
+</style>
   <body>
   <!-- Your Code Goes Here -->
-   
-   
-  
+
+
+  <div class="card">
+<div class="profile-image" style="background-image: url('https://images.pexels.com/photos/936229/pexels-photo-936229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');"></div>
+<p id="profile-name">Adeoson Abiola</p>
+<p class='profile-description'>
+ Hi i,am Abiola , I'm a UX/UI Branding & ans strategy designer with oer 5 Years of Experience in Helping brands make it hit
+  </p>
+  <button class='profile-btn'> Hire Now</button>
+</div>
+
+
+
   <!-- material -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -26,4 +77,3 @@
     </script>
   </body>
   </html>
-
