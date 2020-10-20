@@ -31,7 +31,7 @@ type.value=``;
 function AddInput(type,text,id=`textinput${Math.floor(Math.random())}`){
     console.log(id)
     const input=`
-        <div class="input-field col  l12" >
+        <div class="input-field col  l12 s12" >
           <input id="${id}" type="${type}" class="validate center" required >
           <label for="${id}">${text}</label>
         </div>
@@ -140,6 +140,7 @@ function addswitches(){
   `
   const div = document.createElement('div');
   div.classList.add('switch');
+
   div.innerHTML=switches;
   document.getElementById('form-inputs').appendChild(div);
 M.AutoInit();

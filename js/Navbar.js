@@ -88,6 +88,7 @@ function changelogo(){
   var url =document.getElementById('logoinput').value;
  
   document.querySelector('.brand-logo').src=url;
+  document.querySelector('.brand-logo').style.height='100%';
   console.log(url)
   console.log( document.querySelector('.brand-logo'))
   updatecode();
@@ -126,6 +127,8 @@ var html=`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <!-- material css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
