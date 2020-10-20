@@ -1,0 +1,189 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.container
+{
+display: grid;
+grid-template-columns: 7% 44% 49%;
+justify-items: stretch;
+align-items: stretch;
+}
+
+.box1
+{
+grid-column: 1;
+grid-row: 1/3;
+background-color: #2F2B2B;
+justify-self: stretch;
+align-self: stretch;
+}
+
+.box2
+{
+grid-column: 2;
+grid-row: 1/3;
+background-color: #2F2B2B;
+}
+
+.box3
+{
+grid-column: 3;
+grid-row: 1/2.5;
+background-color: #fff;
+}
+
+h1
+{
+font-family: Impact, fantasy;
+font-weight: bold;
+font-size: 40px;
+color: #fff;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+i
+{
+margin-top: 40px;
+margin-left: 30px;
+font-size: 30px;
+}
+
+h2
+{
+color: #696969;
+font-size: 60px;
+font-family: Impact, fantasy;
+font-weight: bold;
+margin-top: 80%;
+transform: rotate(-90deg);
+}
+
+ul
+{
+list-style-type: none;
+margin-left: -30%;
+}
+
+ul li a
+{
+text-align: center;
+}
+
+ul1
+{
+float: left;
+list-style-type: none;
+margin-left: 10%;
+margin-top: 0%;
+}
+
+ul1 li 
+{
+display: inline-block;
+margin-right: 30px;
+}
+
+ul1 li a
+{
+font-family: Century Gothic;
+font-weight: bold;
+color: #696969;
+text-decoration: none;
+padding: 12px 20px;
+margin: 8px 0;
+}
+
+h3
+{
+font-family: Impact, fantasy;
+font-weight: bold;
+font-size: 50px;
+color: #000000;
+margin-left: 20%;
+margin-top: 15%;
+}
+
+p
+{
+font-family: sans-serif;
+text-align: left;
+margin-left: 38%;
+margin-top: -14%;
+color: #2F2B2B
+}
+
+ul2
+{
+float: left;
+margin-left: 38%;
+list-style-type: none;
+} 
+
+ul2 li
+{
+display: inine-block;
+}
+
+ul2 li a
+{
+font-family: Gill Sans, sans-serif;
+text-decoration: none;
+color: #000000;
+font-weight: bold;
+font-size: 20px;
+}
+
+.box4
+{
+display: grid;
+grid-template-columns: 33% 33% 33%;;
+grid-column: 3;
+}
+
+.box4 div
+{
+background-color: #fff;
+padding: 1em;
+}
+
+.box4 div:nth-child(odd)
+{
+background-color: #2F2B2B;
+padding: 1em;
+}
+
+header img
+{
+margin-top: -8%;
+margin-bottom: -8%;
+margin-left: -8%;
+margin-right: 10%;
+}
+
+header1 img
+{
+margin-top: -8%;
+margin-bottom: -9%;
+margin-left: -8%;
+margin-right: 10%;
+}
+
+ul4
+{
+float: left;
+list-style-type: none;
+margin-top: 30%;
+}
+
+ul4 li
+{
+display: inline-block;
+}
+
+ul4 li a
+{
+font-family: Gill Sans, sans-serif;
+color: #fff;
+font-weight: bold;
+font-size: 30px;
+}

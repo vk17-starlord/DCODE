@@ -1,0 +1,157 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.container
+{
+display: grid;
+grid-template-columns: 50% 40% 10%;
+}
+
+.box1
+{
+background-color: #fff;
+padding: 1em;
+}
+
+ul
+{
+list-style-type: none;
+float: right;
+margin-top: 10px;
+}
+
+ul li
+{
+display: inline-block;
+margin-right: 30px;
+}
+
+ul li a
+{
+font-family: calibri;
+font-weight: bold;
+color: #000000;
+padding: 12px 20px;
+letter-spacing: 10px;
+text-decoration: none;
+}
+
+h1
+{
+font-family: calibri;
+font-size: 90px;
+color: #000000;
+letter-spacing: 60px;
+margin-left: 40px;
+margin-top: -15%;
+}
+
+.box2
+{
+background-image: url(3.jpg);
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+
+.box3
+{
+display: grid;
+grid-template-rows: 50% 50%;
+}
+
+.box3 > div
+{
+background-color: #FF0000;
+padding: 1em;
+}
+
+.box3 > div:nth-child(odd)
+{
+background-color: #333333;
+padding: 1em;
+}
+
+ul1
+{
+list-style-type: none;
+float: left;
+margin-left: 40%;
+margin-top: 20%;
+}
+
+ul1 li
+{
+display: inline-block;
+}
+
+ul2
+{
+list-style-type: none;
+float: left;
+margin-top: 50%;
+margin-left: 40%;
+}
+
+ul2 li
+{
+}
+
+u2 li a
+{
+padding: 20px 20px;
+margin: 8px 0;
+justify-content: space-between;
+}
+
+ul3
+{
+list-style-type: none;
+float: left;
+margin-top: 70%;
+margin-left: -6%;
+}
+
+ul3 li
+{
+display: inline-block;
+align-items: center;
+justify-content: center;
+align-items: center;
+}
+
+ul3 li a
+{
+color: #fff;
+padding: 15px 15px;
+letter-spacing: 10px;
+text-decoration: none;
+background-color: #FF0000;
+border-radius: 50px;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-left: 4px;
+}
+
+ul3 li a i
+{
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-left: 10px;
+}
+
+header img
+{
+margin-left: 45%;
+margin-top: 15%;
+}
+
+h3
+{
+font-family: Impact, fantasy;
+font-weight: bold;
+font-size: 40px;
+color: #000000;
+margin-left: 53%;
+}

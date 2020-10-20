@@ -1,0 +1,129 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+body
+{
+background-image: url(1.jpg);
+height: 100vh;
+background-size: 100% 100%;
+background-position: center;
+}
+
+ul
+{
+float: right;
+list-style-type: none;
+margin-right: 20px;
+}
+
+ul li
+{
+display: inline-block;
+margin-right: 20px;
+}
+
+ul li a
+{
+font-family: calibri;
+font-weight: bold;
+color: #000000;
+background-color: #fff;
+text-decoration: none;
+padding: 12px 20px;
+margin: 8px 0;
+}
+
+ul li a:hover
+{
+border-radius: 20px;
+transition: 0.6s ease;
+}
+
+h1
+{
+font-family: Impact, fantasy;
+font-weight: bold;
+color: #fff;
+margin-left: 0%;
+margin-top: 0%;
+font-size: 25px;
+}
+
+h2
+{
+font-family: Impact, fantasy;
+font-weight: bold;
+color: #fff;
+margin-left: 10%;
+font-size: 50px;
+}
+
+p
+{
+font-family: calibri;
+font-weight: bold;
+color: #fff;
+margin-left: 10%;
+}
+
+li a
+{
+font-family: calibri;
+font-weight: bold;
+color: #000000;
+background-color: #fff;
+text-decoration: none;
+padding: 12px 20px;
+margin-left: 10%;
+border-radius: 20px;
+}
+
+ul1
+{
+list-style-type: none;
+margin-top: 10%;
+margin-left: 10%;
+}
+
+ul1 li
+{
+display: inline-block;
+margin-left: 20px;
+margin-top: 50px;
+}
+
+ul1 li a
+{
+font-family: calibri;
+font-weight: bold;
+color: #000000;
+background-color: #fff;
+text-decoration: none;
+padding: 10px 15px;
+border-radius: 20px;
+}
+
+ul2
+{
+float: right;
+list-style-type: none;
+margin-right: 20px;
+margin-top: 10%;
+}
+
+ul2 li
+{
+display: inline-block;
+margin-right: 20px;
+margin-top: 10%;
+}
+
+ul2 li a
+{
+font-family: calibri;
+font-weight: bold;
+color: #000000;
+background-color: #fff;
+text-decoration: none;
+padding: 12px 20px;
+}

@@ -215,3 +215,4 @@ function updatecode(){
   document.querySelector('.language-html').innerHTML=Prism.highlight(html, Prism.languages.html);
   console.log()
 }
+

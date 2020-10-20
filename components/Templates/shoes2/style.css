@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+.container{
+    padding: 30px 30px;
+    width: 270px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px #333;
+}
+
+#title-1, #title-2{
+    font-family: Impact, fantasy;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#title-1:hover{
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+}
+
+#title-2:hover{
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+}
+
+#para-1{
+    font-weight: bold;
+    color: #333;
+}
+

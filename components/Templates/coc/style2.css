@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?
+family=Lato:400,700,900);
+
+$border-radius-size: 14px;
+$giant: #FF0000;
+
+*, *:before, *:after
+{
+box-sizing: border-box;
+}
+
+body
+{
+background: linear-gradient(to bottom, rgba(140,122,122,1)0%, rgba(175,135,124,1)65%, rgba(175,135,124,1)100%) fixed;
+background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+background-size: cover;
+font: 14px/20px "Lato", Arial, sans-serif;
+color: #9E9E9E;
+margin-top: 30px;
+}
+
+.wrapper
+{
+padding-top: 40px;
+padding-bottom: 40px;
+margin-left: 10%;
+&:focus
+{
+outline: 0;
+}
+}
+
+.wrapper1
+{
+padding-top: 40px;
+padding-bottom: 40px;
+margin-left: 40%;
+margin-top: -45.5%;
+&:focus
+{
+outline: 0;
+}
+}
+
+.clash-card 
+{
+background-color: #fff;
+width: 300px;
+display: inline-block;
+margin: auto;
+border-radius: 19px;
+position: relative;
+text-align: center;
+box-shadow: -1px 15px 30px -12px black;
+z-index: 9999;
+}
+
+.clash-card_image
+{
+position: relative;
+height: 270px;
+margin-bottom: 35px;
+border-top-left-radius: 14px;
+border-top-right-radius: 14px;
+}
+
+.clash-card_image--archer
+{
+background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+}
+
+.clash-card_image--archer img
+{
+margin-top: -10%;
+margin-left: -20%;
+}
+
+.clash-card_level
+{
+text-transform: uppercase;
+font-size: 12px;
+font-weight: 700;
+margin-bottom: 3px;
+}
+
+.clash-card_level--archer
+{
+color: #EE5487;
+}
+
+.clash-card_unit-name
+{
+font-size: 26px;
+color: black;
+font-weight: 900;
+margin-bottom: 5px;
+}
+
+.clash-card_unit-description
+{
+padding: 40px;
+margin-bottom: 10px;
+color: #333333;
+}
+
+.clash-card_unit-stats--archer
+{
+background: #EE5487;
+height: 10%;
+}
+
+.one-third
+{
+border-right: 1px solid darken(#EE5487, 8%);
+}
+
+
+.clash-card_unit-stats
+{
+color: #fff;
+font-weight: 400;
+border-bottom-left-radius: 14px;
+border-bottom-right-radius: 14px;
+font-weight: bold;
+}
+
+.one-third
+{
+width: 33%;
+float: left;
+display: inline-block;
+margin: 8px 0;
+font-weight: bold;
+}
+
+.one-third .stat
+{
+position: relative;
+font-size: 20px;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.stat sup
+{
+position: absolute;
+bottom: 4px;
+font-size: 45%;
+margin-left: 2px;
+font-weight: bold;
+}
+
+
+.one-third .stat-value
+{
+text-transform: uppercase;
+font-weight: 400;
+font-size: 20px;
+font-weight: bold;
+}
+
+.one-third .no-border
+{
+border-right: none;
+}
+
+
+.clearfix:after
+{
+visibility: hidden;
+display: block;
+font-size: 0px;
+content: " ";
+clear: both;
+height: 0;
+}
+

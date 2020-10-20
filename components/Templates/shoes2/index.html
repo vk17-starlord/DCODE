@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv = "X-UA-Compatible" content="ie=edge">
+<title>Wanderlast</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+.container{
+    padding: 30px 30px;
+    width: 270px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px #333;
+}
+
+#title-1, #title-2{
+    font-family: Impact, fantasy;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#title-1:hover{
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+}
+
+#title-2:hover{
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+}
+
+#para-1{
+    font-weight: bold;
+    color: #333;
+}
+
+
+</style>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+  <a class="navbar-brand" href="#" style="font-weight: bold; font-family: rale, cursive; font-size: 1.5rem;">JORDAN</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav" style="color: #fff;">
+    <ul class="navbar-nav m-auto" style="font-family: calibri;">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Category</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Guide</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Learn More</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact </i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign in</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+<section id="user" class="pb-5">
+<h2 id="title" class="text-center py-4" style="font-family: Impact, fantasy; font-size: 1.5rem; color: #fff;"><img src="3.jpg" class="img-fluid img-thumbnail" height="50px" width="100px"/><br><br>JUST DO IT!</h2>
+<div class="container">
+<div id="container" class="d-flex flex-row justify-content-between" style="cursor: pointer;">
+<h3 id="title-1">REGISTER</h3>
+<h3 id="title-2" class="ml-5">LOGIN</h3>
+</div>
+<hr class="border-success">
+<div id="register" style="display: block;">
+<p id="para-1">Email: </p>
+<input type="text" class="form-control" placeholder="Enter your email id" id="registerText1"/>
+<p id="para-1" class="mt-2">Password: </p>
+<input type="password" class="form-control" placeholder="Enter your password" id="registerText2"/>
+<div id="play" class="text-center mt-3">
+<button type="submit" onclick="onRegister()" class="btn btn-success">Register</button>
+</div>
+</div>
+<div id="login" style="display: none">
+<p id="para-1">Email: </p>
+<input type="text" class="form-control" placeholder="Enter your email id" id="loginText1"/>
+<p id="para-1" class="mt-2">Password: </p>
+<input type="password" class="form-control" placeholder="Enter your password" id="loginText2"/>
+<div id="play1" class="text-center mt-3">
+<button type="submit" onclick="onLogin()" class="btn btn-success">Login</button>
+</div>
+</div>
+</div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+var container = document.querySelector(".container");
+var register = document.querySelector("#register");
+var login = document.querySelector("#login");
+var title_1 = document.querySelector("#title-1");
+var title_2 = document.querySelector("#title-2");
+
+title_1.addEventListener('click', Register);
+function Register()
+{
+    register.style.display = 'block';
+    login.style.display = 'none';
+}
+
+title_2.addEventListener('click', Login);
+function Login(){
+    register.style.display = 'none';
+    login.style.display = 'block';    
+}
+
+var registerText1 = document.querySelector("#registerText1");
+var registerText2 = document.querySelector("#registerText2"); 
+var loginText1 = document.querySelector("#loginText1");
+var loginText2 = document.querySelector("#loginText2");
+
+function onRegister(event){
+    localStorage.setItem("registerText1", registerText1.value);
+    localStorage.setItem("registerText2", registerText2.value);
+}
+
+function onLogin(){
+    var storedText1 = localStorage.getItem("registerText1");
+    var storedText2 = localStorage.getItem("registerText2");
+
+    if(loginText1.value == storedText1 && loginText2.value == storedText2){
+        alert("Login SuccessFul!!");
+        window.location = "index1.html";
+        return false; 
+    }else{
+        alert("Login Unsuccessful!!");
+    }
+}
+</script>
+</body>
+</html>

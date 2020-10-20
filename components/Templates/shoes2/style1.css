@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    height: 100vh;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#container1{
+    background-color: #000;
+    width: 290px;
+    margin-top: 20px;
+}
+
+#title-1{
+    font-family: Impact, fantasy;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#para-1{
+    font-family: calibri;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#top-sale .owl-carousel .item .product a{
+overflow: hidden;
+}    
+
+#top-sale .owl-carousel .item .product img{
+transition: transform 0.5s ease;
+}
+
+#top-sale .owl-carousel .item .product img:hover{
+transform: scale(1.1);
+}
+
+#top-sale .owl-carousel .owl-nav button{
+position: absolute;
+top: 30%;
+outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+left: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span{
+font-size: 35px;
+color: #000000;
+padding: 0 1rem;
+}
+
+.owl-carousel .owl-nav button.owl-next span
+{
+margin-right: -4rem;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+right: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev span{
+margin-left: -4rem;
+}
+
+#title-3{
+    margin-top: 2px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+#special-price .grid .grid-item
+{
+margin-right: 1.2rem;
+margin-top: 1rem;
+}
+
+h6, span{
+    color: #fff;
+}
