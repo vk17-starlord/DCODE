@@ -9,7 +9,7 @@ document.getElementById('imageinput').value=``;
 
 function updateimagehtml(){
     let imagehtml='';
- imageurls.forEach((item,index) => {
+ imageurls.forEach((item) => {
 console.log(item);
 imagehtml += `
 <a class="carousel-item" href="#"><img src="${item}"></a>
